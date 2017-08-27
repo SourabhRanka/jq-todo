@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <title>jQ Todo List </title>
+</head>
+
+<body>
+    <div>
+        <h1>My todo List</h1>
+        <input type="text" id='name' value="" onkeypress="handle(event)">
+        <button type="button" onclick="addItem()">Add</button>
+        <button type="button" onclick="resetItems()">Reset</button>
+        <ul id="list">
+            <!--dynamically generated list will go here     -->
+        </ul>
+    </div>
+</body>
+
+</html>
